@@ -6,23 +6,21 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
 </head>
 <body>
-  <template id="greetings">
- _______  _______  ______    __   __  ___   __    _  _______  ___     
-|       ||       ||    _ |  |  |_|  ||   | |  |  | ||   _   ||   |    
-|_     _||    ___||   | ||  |       ||   | |   |_| ||  |_|  ||   |    
-  |   |  |   |___ |   |_||_ |       ||   | |       ||       ||   |    
-  |   |  |    ___||    __  ||       ||   | |  _    ||       ||   |___ 
-  |   |  |   |___ |   |  | || ||_|| ||   | | | |   ||   _   ||       |
-  |___|  |_______||___|  |_||_|   |_||___| |_|  |__||__| |__||_______|
-</template>
  <script>
-  $('body').terminal("service.py", {
-    greetings: greetings.innerHTML
-    hello: function(what) {
-     if (what == 'dave') {
-        this.echo('dave you piece of shit');
-    }
-  });
+<script>
+$(function() {
+    $('body').terminal({
+        hello: function(what) {
+            this.echo('Hello' + what + ', pleasure to meet you.');
+            if (what == 'dave') {
+              this.echo('Dave you piece of shit');
+            }
+        }
+    }, {
+        greetings: 'Wake to the Ashes story RPG.'
+    });
+});
+</script>
 </script>
 </body>
 </html>

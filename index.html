@@ -5,7 +5,8 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
 </head>
- <template id="greetings">
+<body>
+  <template id="greetings">
  _______  _______  ______    __   __  ___   __    _  _______  ___     
 |       ||       ||    _ |  |  |_|  ||   | |  |  | ||   _   ||   |    
 |_     _||    ___||   | ||  |       ||   | |   |_| ||  |_|  ||   |    
@@ -14,7 +15,6 @@
   |   |  |   |___ |   |  | || ||_|| ||   | | | |   ||   _   ||       |
   |___|  |_______||___|  |_||_|   |_||___| |_|  |__||__| |__||_______|
 </template>
-<body>
  <script>
   $('body').terminal("service.py", {
     greetings: greetings.innerHTML

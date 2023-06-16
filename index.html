@@ -11,15 +11,11 @@
 $(function() {
     $('body').terminal({
         hello: function(what) {
-            if (hello == 'A') {
-                this.echo('YOU SURVIVED! well atleast for 1 minute then the guard caught you by transporting himself.');
-            }
-            else if (hello == 'B') {
-                this.echo('Ooops. The security guard pulled out his gun and just shot you with his laser sight precision. try next time kid.');
-            }
+            this.echo('Hello, ' + what +
+                      '. Wellcome to this terminal.');
         }
     }, {
-        greetings: 'Wake to the Ashes story RPG. (Use hello to choose options, for example: hello A) \n\nCrack of dawn in Oceania. Brad wakes up and finds himself in the hospital, utterly confused by this revelation, he detaches his IV fluid lines and rushes straight to the hospital gate,\n but he soon found himself between a rock and a hard place.\nThe gate was covered by an invisible electromagnetic field that barred him from escaping since he was physically incapable of doing so, using his falcon-sharp eyes, he spots some security guards on the 5th floor staring at him.\n\nDo you:\nA. Run\nB. Scream to the guard'
+        greetings: 'My First Web Terminal'
     });
 });
 </script>

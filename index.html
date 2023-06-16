@@ -18,15 +18,11 @@
  <script>
   $('body').terminal("service.py", {
     greetings: greetings.innerHTML
-  });
-$('body').terminal({
-    hello: function(what) {
+   hello: function(what) {
      if (what == 'dave')
         this.echo('dave you piece of shit');
     }
-}, {
-    greetings: 'My First Web Terminal'
-});
+  });
 </script>
 </body>
 </html>

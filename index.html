@@ -11,9 +11,11 @@
 $(function() {
     $('body').terminal({
         hello: function(what) {
-            this.echo('Hello' + what + ', pleasure to meet you.');
             if (what == 'dave') {
               this.echo('Dave you piece of shit');
+            } 
+            else {
+                 this.echo('Hello ' + what + ', pleasure to meet you.');
             }
         }
     }, {
